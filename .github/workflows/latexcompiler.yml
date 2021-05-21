@@ -10,3 +10,8 @@ jobs:
         uses: dante-ev/latex-action@latest
         with:
           root_file: main.tex
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2.2.3
+        with:
+          name: resume.pdf
+          path: main.pdf
